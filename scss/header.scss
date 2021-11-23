@@ -54,3 +54,8 @@ background-color: var(--violeta);
     border-bottom: 2px solid var(--rojo);
   }
   
+  .menu__links a:active {
+    color: var(--rojo);
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--rojo);
+  }
