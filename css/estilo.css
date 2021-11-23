@@ -61,7 +61,53 @@ ul li p {
   --coralSuave: #EA8888;
   --negro: #1E1E1E;
   --blanco: #FFF;
-  --violeta: #8064A2; }
+  --violeta: #8064A2;
+  --verde:#bbe261; }
+
+.verde {
+  background-color: var(--verde); }
+
+.verde h1 {
+  color: var(--blanco); }
+
+.verde h4 {
+  color: var(--blanco); }
+
+.amarillo {
+  background-color: #FBCE01; }
+
+.amarillo h4 {
+  color: #e9de40; }
+
+.amarillo h1 {
+  color: #000000; }
+
+.naranja {
+  background-color: #FD9142; }
+
+.naranja h4 {
+  color: #000000; }
+
+.naranja h1 {
+  color: #000000; }
+
+.rojo {
+  background-color: #DE2827; }
+
+.rojo h1 {
+  color: #ffffff; }
+
+.rojo h4 {
+  color: #ffffff; }
+
+.celeste {
+  background-color: #8BCCD5; }
+
+.celeste h1 {
+  color: #000000; }
+
+.celeste h4 {
+  color: #000000; }
 
 html {
   font-size: 12px; }
