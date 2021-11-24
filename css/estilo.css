@@ -59,6 +59,9 @@ ul li {
   --violeta:#8064A2;
   --verde:#bbe261; }
 
+.card-body {
+  flex-grow: 0; }
+
 .texto-1 {
   font-size: 1em; }
 
@@ -107,7 +110,9 @@ html {
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc(12px + 6 * ((100vw - 320px) / 680)); } }
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680)); }
+  [class*="col-"] {
+    width: 100%; } }
 
 @media screen and (min-width: 1000px) {
   html {
@@ -434,7 +439,6 @@ ul li:hover ul {
   color: var(--primero);
   height: 46px;
   width: 46px;
-  background: var(--negro);
   border-radius: 50%;
   line-height: 46px;
   text-align: center;
@@ -447,3 +451,19 @@ ul li:hover ul {
   .footer__redsocial a:hover {
     background: var(--primero);
     color: var(--pinksuave); }
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--instagram {
+  background-color: #C25E30; }
+
+.btn--whatsapp {
+  background-color: #66c230; }
+
+.btn--youtube {
+  background-color: #b98181; }
