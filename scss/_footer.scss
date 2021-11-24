@@ -1,22 +1,21 @@
-
-.footer__bg{
-    background-color:var(--primero);
-}
-.footer{
+.footer__bg {
+	background-color: var(--primero);
+  }
+  
+  .footer {
 	padding: 2%;
-  background-color:var(--pinksuave);
-  border-top-left-radius:10%;
-  border-top-right-radius:10%;
-
-}
-
-.footer__redsocial a {
+	background-color: var(--pinksuave);
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+  }
+  
+  .footer__redsocial a {
 	display: inline-block;
 	font-size: 16px;
 	color: var(--primero);
 	height: 46px;
 	width: 46px;
-	background:var(--negro);
+	background: var(--negro);
 	border-radius: 50%;
 	line-height: 46px;
 	text-align: center;
@@ -24,16 +23,13 @@
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
 	margin-right: 6px;
-}
-
-.footer__redsocial a:last-child {
-	margin-right: 0;
-}
-
-.footer__redsocial a:hover {
-	background: var(--primero);
-	color:  var(--pinksuave);
-}
-
-
-
+  
+	&:last-child {
+	  margin-right: 0;
+	}
+  
+	&:hover {
+	  background: var(--primero);
+	  color: var(--pinksuave);
+	}
+  }
