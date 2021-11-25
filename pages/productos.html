@@ -31,7 +31,7 @@
 
 
 <body>
-  <header class="header verde">
+  <header class="header violeta">
    <!-- seccion productos menu start -->
  <nav class="navbar navbar-light navbar-expand-lg menu"  style="background-color: #fec9cb;">
   <div class="logo">      
@@ -72,8 +72,8 @@
 </header>
    <!-- seccion productos menu end -->
 
-   <section>
-    <div class="seccion verde  px-4 px-lg-5">
+   <section class="carrousel col-12">
+    <div class="px-4 px-lg-5">
       <div class="row titulo">
         <h1>Higiene íntima femenina</h1>
       </div>
@@ -101,7 +101,8 @@
         </p>
         <a class="btn btn-primary " data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
           aria-controls="collapseExample">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vermasverde">
+        
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">
             ver mas..
           </button>
 
@@ -141,13 +142,13 @@
 
 
   <!-- The Modal -->
-  <div class="modal" id="vermasverde">
-    <div class="modal-dialog">
+  <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
+          <h4 class="modal-title">Reducir, Reutilizar y Reciclar...</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
@@ -195,19 +196,21 @@
     </div>
   </div>
 
- <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer__redsocial">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube-play"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=+543515322277"><i class="fa fa-whatsapp"></i></a>            
+  <footer class="footer__bg">
+    <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__redsocial">
+          <a href="https://www.facebook.com/" class="btn--facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/home" class="btn--twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/santa_cachucha__/" class="btn--instagram"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/" class="btn--youtube"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=+543515322277" class="btn--whatsapp"><i class="fa fa-whatsapp"></i></a>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+  </footer>
 
    <!-- scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
