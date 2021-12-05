@@ -133,8 +133,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-left: 50px; }
+  justify-content: center; }
 
 .santa {
   transition: 750ms;
@@ -439,6 +438,7 @@ ul li:hover ul {
   color: var(--primero);
   height: 46px;
   width: 46px;
+  background: var(--negro);
   border-radius: 50%;
   line-height: 46px;
   text-align: center;
@@ -451,19 +451,3 @@ ul li:hover ul {
   .footer__redsocial a:hover {
     background: var(--primero);
     color: var(--pinksuave); }
-
-/*Creamos el bucle para usar los valores del mapa*/
-.btn--twitter {
-  background-color: #55acee; }
-
-.btn--facebook {
-  background-color: #3a5795; }
-
-.btn--instagram {
-  background-color: #C25E30; }
-
-.btn--whatsapp {
-  background-color: #66c230; }
-
-.btn--youtube {
-  background-color: #b98181; }
