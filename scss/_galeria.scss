@@ -1,0 +1,149 @@
+/* Sección de Galería -*/
+
+.galeria-section {
+  background: #151515;
+  padding-bottom: 70px;
+  padding-top: 95px;
+}
+
+.galeria-controls {
+  text-align: center;
+  margin-bottom: 45px;
+
+  ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase;
+    color: var(--blanco);
+    display: inline-block;
+    margin-right: 45px;
+    cursor: pointer;
+    position: relative;
+
+    &.active {
+      color: var(--VerdeSecundario);
+
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      width: 100%;
+      height: 2px;
+      background: var(--blanco);
+      content: "";
+      opacity: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.galeria-item {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+
+  &:hover {
+    &:after, &:before {
+      opacity: 1;
+    }
+
+    .gi-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--VerdeSecundario);
+    content: "";
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .gi-hover-warp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 9;
+  }
+
+  .gi-hover {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+
+    a {
+      height: 60px;
+      width: 60px;
+      border: 2px solid var(--blanco);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 60px;
+      font-size: 24px;
+      display: inline-block;
+      color: var(--VerdeSecundario);
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+
+    h6 {
+      color: var(--VerdeSecundario);
+      margin-top: 25px;
+
+      span {
+        font-family: "Quicksand", sans-serif;
+        margin-top: 7px;
+        display: block;
+      }
+    }
+  }
+}
