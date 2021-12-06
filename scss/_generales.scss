@@ -21,10 +21,6 @@
 .card-body {
   flex-grow: 0;
 }
-//bucle
-@for $i from 1 through 3 {
-  .texto-#{$i} { font-size: 1em * $i; }
-}
 
 
 #svgelem {
@@ -108,11 +104,7 @@ html {
   }
 }
 
-a {
-  font-size: 2rem;
 
-  /* 20px */
-}
 
 .logo {
   display: flex;
@@ -132,9 +124,26 @@ a {
 
   &:hover {
     transition: 750ms;
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 }
+
+
+.santa__min{
+  transition: 750ms;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+
+  /* 20px */
+  color: var(--rojo);
+
+  &:hover {
+    transition: 750ms;
+    font-size: 3rem;
+  }
+}
+
 
 .cachucha {
   transition: 750ms;
@@ -146,10 +155,23 @@ a {
 
   &:hover {
     transition: 750ms;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
+.cachucha__min {
+  transition: 750ms;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+
+  /* 20px */
+
+  &:hover {
+    transition: 750ms;
+    font-size: 2rem;
+  }
+}
 .section {
   padding: 7em 0;
   clear: both;
@@ -173,7 +195,13 @@ a {
   background-color: var(--violeta);
   padding: 5%;
   text-align: center;
-
+    .row {
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    
+  }
   img {
     width: auto;
     height: auto;
@@ -203,38 +231,17 @@ a {
   color: var(--pinksuave);
 }
 
-ul {
-  ul {
-    position: absolute;
-    display: none;
 
-    li {
-      display: block;
-    }
-  }
 
-  li:hover ul {
-    display: block;
-  }
-}
 
-.flex-container {
-  color: #f4bcbc;
-  font-size: 1rem;
-}
 
-.row {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 
 .titulo {
   color: #ffffff;
 }
 
-.column {
+.columna {
   width: 45%;
   display: flex;
   flex-flow: column wrap;
@@ -247,18 +254,7 @@ ul {
   vertical-align: top;
 }
 
-/*--------------------------------- Responsive Media Quaries -----------------------------*/
-@media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-}
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-  }
-}
 
 .boton__tarjeta {
   color: var(--violeta) !important;
@@ -288,7 +284,7 @@ ul {
   background: var(--primero);
   padding-top: 100px;
   padding-bottom: 90px;
-
+  
   .tajeta {
     background: var(--negro);
     margin-bottom: 30px;
