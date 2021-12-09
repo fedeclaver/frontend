@@ -1,62 +1,82 @@
 @charset "UTF-8";
-.header {
-  background-color: var(--violeta); }
-
 .menu {
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   padding: 100px;
   background-color: var(--pinksuave); }
 
-.menu__links {
-  text-transform: uppercase;
-  font-size: 5rem;
-  font-weight: 800;
-  list-style: none;
-  line-height: 90px; }
-  .menu__links li {
-    display: inline-block;
-    margin: 0 20px;
-    vertical-align: middle; }
-    .menu__links li img {
-      transition: 450ms;
-      width: 100px;
-      height: 100px; }
-      .menu__links li img:hover {
-        transition: 750ms;
-        width: 120px;
-        height: 120px; }
+.menu__links .navbar-nav {
+  align-items: center; }
 
-ul li {
-  margin: 30px; }
-  ul li p {
+.menu__links li {
+  display: inline-block;
+  vertical-align: middle; }
+  .menu__links li p {
     color: var(--blanco); }
-
-.menu__links li a {
-  color: var(--negro);
-  text-decoration: none;
-  font-size: 18px; }
-  .menu__links li a:hover {
+  .menu__links li img {
+    transition: 450ms;
+    width: 100px;
+    height: 100px; }
+    .menu__links li img:hover {
+      transition: 750ms;
+      width: 120px;
+      height: 120px; }
+  .menu__links li a {
+    color: var(--negro);
+    text-decoration: none; }
+    .menu__links li a:hover {
+      color: var(--rojo);
+      padding-bottom: 7px;
+      border-bottom: 2px solid var(--rojo); }
+  .menu__links li a.nav-link.active {
     color: var(--rojo);
     padding-bottom: 7px;
     border-bottom: 2px solid var(--rojo); }
 
-.menu__links a:active {
-  color: var(--rojo);
-  padding-bottom: 7px;
-  border-bottom: 2px solid var(--rojo); }
-
 :root {
   --primero:#C13A2D;
+  --marron:#BD4240;
+  --rosaviejo:#C88180;
+  --coralSuave:#F29C9B;
+  --negro:#1E1E1E;
+  --blanco:#FFF;
+  --violeta:#8064A2;
   --rojo:#F05552;
   --coral:#F48886;
   --pink:#ED9896;
   --pinksuave:#FEC9CB;
-  --coralSuave:#EA8888;
-  --negro:#1E1E1E;
-  --blanco:#FFF;
-  --violeta:#8064A2;
-  --verde:#bbe261; }
+  --naranja:#F87E48;
+  --marron:#702726;
+  --verde:  #17A343;
+  --verde2:#51F083;
+  --rosa:#FF7370;
+  --bordo:#A32927; }
+
+/*Creamos el bucle para usar los valores del mapa*/
+.index {
+  background-color: var(--violeta);
+  width: 100%;
+  height: 100%; }
+
+.comprar {
+  background-color: var(--violeta);
+  width: 100%;
+  height: 100%; }
+
+.contacto {
+  background-color: var(--violeta);
+  width: 100%;
+  height: 100%; }
+
+.productos {
+  background-color: var(--violeta);
+  width: 100%;
+  height: 100%; }
+
+.quienes_somos {
+  background-color: var(--violeta);
+  width: 100%;
+  height: 100%; }
 
 .card-body {
   flex-grow: 0; }
@@ -74,26 +94,24 @@ ul li {
     color: var(--blanco); }
 
 .amarillo {
-  background-color: #FBCE01; }
-  .amarillo h4 {
-    color: #e9de40; }
-  .amarillo h1 {
-    color: #000000; }
+  background-color: var(--amarillo); }
+  .amarillo h1, .amarillo h4, .amarillo p {
+    color: var(--negro); }
 
 .naranja {
   background-color: #FD9142; }
-  .naranja h4, .naranja h1 {
-    color: #000000; }
+  .naranja h1, .naranja h4, .naranja p {
+    color: var(--negro); }
 
 .rojo {
-  background-color: #DE2827; }
-  .rojo h1, .rojo h4 {
-    color: #ffffff; }
+  background-color: var(--rojo); }
+  .rojo h1, .rojo h4, .rojo p {
+    color: var(--blanco); }
 
 .celeste {
   background-color: #8BCCD5; }
-  .celeste h1, .celeste h4 {
-    color: #000000; }
+  .celeste h1, .celeste h4, .celeste p {
+    color: var(--negro); }
 
 html {
   font-size: 12px; }
@@ -172,12 +190,6 @@ html {
   section {
     padding: 2em 0; } }
 
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--blanco); }
-
 .carrousel {
   background-color: var(--violeta);
   padding: 5%;
@@ -243,6 +255,10 @@ html {
   background: var(--primero);
   padding-top: 100px;
   padding-bottom: 90px; }
+  .nuestros__productos .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
   .nuestros__productos .tajeta {
     background: var(--negro);
     margin-bottom: 30px;
@@ -255,7 +271,8 @@ html {
       border-top-right-radius: 15px;
       border-top-left-radius: 15px; }
       .nuestros__productos .tajeta .department_thumb img {
-        width: 100%;
+        height: auto;
+        width: auto;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -406,12 +423,6 @@ html {
         font-family: "Quicksand", sans-serif;
         margin-top: 7px;
         display: block; }
-
-.footer__rojo {
-  background-color: var(--primero); }
-
-.footer__violeta {
-  background-color: var(--violeta); }
 
 .footer {
   padding-top: 2%;

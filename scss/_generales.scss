@@ -1,21 +1,52 @@
 //colores
 
 :root {
+  //monocromaticos
   --primero:#C13A2D;
-  --rojo:#F05552;
+  --marron:#BD4240;
+  --rosaviejo:#C88180;
+  --coralSuave:#F29C9B;
+  --negro:#1E1E1E;
+  --blanco:#FFF;
+  
+  //personalizados
+  --violeta:#8064A2;
+--rojo:#F05552;
   --coral:#F48886;
   --pink:#ED9896;
   --pinksuave:#FEC9CB;
-  --coralSuave:#EA8888;
-  --negro:#1E1E1E;
-  --blanco:#FFF;
-  --violeta:#8064A2;
-  --verde:#bbe261;
+  --naranja:#F87E48;
+  --marron:#702726;
+  //complementarios de F05552
+  --verde:  #17A343;
+  --verde2:#51F083;
+  --rosa:#FF7370;
+  --bordo:#A32927;
+ 
 }
 
 
 
 
+
+
+
+
+  $fondo: ( /*Declaramos nuestro mapa*/
+        index: var(--violeta),
+        comprar:  var(--violeta),
+        contacto: var(--violeta),
+		productos:var(--violeta),
+		quienes_somos:var(--violeta),
+); 
+/*Creamos el bucle para usar los valores del mapa*/
+@each $i, $color in $fondo {
+   .#{ $i} {
+       background-color: $color;
+       width:100%;
+      height:100%;
+   }
+}
 
 
 .card-body {
@@ -40,38 +71,33 @@
 }
 
 .amarillo {
-  background-color: #FBCE01;
+  background-color: var(--amarillo);
 
-  h4 {
-    color: #e9de40;
-  }
-
-  h1 {
-    color: #000000;
+  h1, h4,p { 
+    color:  var(--negro)
   }
 }
 
 .naranja {
   background-color: #FD9142;
-
-  h4, h1 {
-    color: #000000;
+  h1, h4,p {
+    color: var(--negro)
   }
 }
 
 .rojo {
-  background-color: #DE2827;
+  background-color:var(--rojo);
 
-  h1, h4 {
-    color: #ffffff;
+  h1, h4,p {
+    color: var(--blanco)
   }
 }
 
 .celeste {
   background-color: #8BCCD5;
 
-  h1, h4 {
-    color: #000000;
+  h1, h4,p {
+    color: var(--negro)
   }
 }
 
@@ -184,12 +210,6 @@ html {
   }
 }
 
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--blanco);
-}
 
 .carrousel {
   background-color: var(--violeta);
@@ -281,10 +301,19 @@ html {
 }
 
 .nuestros__productos {
+  
   background: var(--primero);
   padding-top: 100px;
   padding-bottom: 90px;
   
+      .row {
+     
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    
+    }
   .tajeta {
     background: var(--negro);
     margin-bottom: 30px;
@@ -299,7 +328,8 @@ html {
       border-top-left-radius: 15px;
 
       img {
-        width: 100%;
+        height: auto;
+        width: auto;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
