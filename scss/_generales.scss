@@ -28,13 +28,9 @@
 
 
 
-
-
-
-
-
   $fondo: ( /*Declaramos nuestro mapa*/
         index: var(--violeta),
+        index_footer:var(--primero),
         comprar:  var(--violeta),
         contacto: var(--violeta),
 		productos:var(--violeta),
@@ -55,7 +51,7 @@
   max-width: 1200px;
   margin:0 auto;
   overflow: hidden;
-  padding: 200px 0;
+  padding: 30px 0px;
   height: auto;
 }
 
@@ -89,7 +85,7 @@
 }
 
 .naranja {
-  background-color: #FD9142;
+  background-color: (--naranja);
   h1, h4,p {
     color: var(--negro)
   }
@@ -102,12 +98,17 @@
     color: var(--blanco)
   }
 }
-
-.celeste {
-  background-color: #8BCCD5;
+.violeta{
+  background-color: var(--violeta);
+  h1, h3,h4,p {
+    color: var(--coralSuave);
+  }
+}
+.marron {
+  background-color: var(--marron);
 
   h1, h4,p {
-    color: var(--negro)
+    color: var(--blanco)
   }
 }
 
@@ -268,7 +269,7 @@ html {
 
 
 .titulo {
-  color: #ffffff;
+  color: var(--blanco);
 }
 
 .columna {
@@ -338,8 +339,8 @@ html {
       border-top-left-radius: 15px;
 
       img {
-        height: auto;
-        width: auto;
+        height:100%;
+        width: 100%;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);

@@ -1,7 +1,7 @@
 /* Sección de Galería -*/
 
 .galeria-section {
-  background: #151515;
+  background: var(--negro);
   padding-bottom: 70px;
   padding-top: 95px;
 }
@@ -14,7 +14,7 @@
     list-style: none;
     font-size: 16px;
     font-weight: 500;
-    font-family: "Montserrat", sans-serif;
+   
     text-transform: lowercase;
     color: var(--blanco);
     display: inline-block;
