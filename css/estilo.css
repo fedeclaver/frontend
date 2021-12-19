@@ -45,7 +45,6 @@
   --coral:#F48886;
   --pink:#ED9896;
   --pinksuave:#FEC9CB;
-  --naranja:#F87E48;
   --marron:#702726;
   --verde:  #17A343;
   --verde2:#51F083;
@@ -126,7 +125,7 @@
 .violeta {
   background-color: var(--violeta); }
   .violeta h1, .violeta h3, .violeta h4, .violeta p {
-    color: var(--coralSuave); }
+    color: var(--blanco); }
 
 .marron {
   background-color: var(--marron); }

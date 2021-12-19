@@ -11,7 +11,7 @@
     content="Descubre productos de higiene personal ecológica en nuestra tienda. Copa menstrual, desodorantes naturales, cepillos de bamboo y mucho más!">
 
   <meta name="keywords"
-    content="higiene natural, higiene ecologica, sin parabenes, sin derivados del petroleo,protectores mamarios,Toallitas,vida natural,belleza y piel,cosmetica natural,mujerconciente,mujeres reales,consumoconsciente,cosmeticaconsciente,producto reutilizable,mejorlatela,tela,ecologia,ecofriendly,ciclomenstrual,menstruacion,sustentabilidad,menstruacion sustentable,toallitas reutilizables,toallas de tela femenina,mujer,ciclicidad,ciclicidad femenina,menstrual cycle,menstrual health,toallitas reutilizables,toallitas de tela argentina,toallitasecologicas,toallitas de tela,mujer conciente,shampoo solido,acondicionador solido,detergente solido,solido,beneficios de la copa,vida sustentable,menstruacion sustentable,copa menstrual argentina,menstruacion,maggacup,copitafan,menarche,periods,,sustainable living,menstrual cup,period positive,copamenstrual argentina">
+    content="higiene natural, higiene ecologica, sin parabenes, sin derivados del petroleo,protectores mamarios,Toallitas,vida natural,belleza y piel,cosmetica natural,mujerconciente,mujeres reales,consumoconsciente,cosmeticaconsciente,producto reutilizable,mejorlatela,tela,ecologia,ecofriendly,ciclomenstrual,menstruacion,sustentabilidad,menstruacion sustentable,toallitas reutilizables,toallas de tela femenina,mujer,ciclicidad,ciclicidad femenina,menstrual cycle,menstrual health,toallitas reutilizables,toallitas de tela argentina,toallitasecologicas,toallitas de tela,mujer conciente,shampoo solido,acondicionador solido,detergente solido,solido,beneficios de la copa,vida sustentable,menstruacion sustentable,copa menstrual argentina,menstruacion,maggacup,copitafan,menarche,copamenstrualargentina,pañal,pañales ecológicos, mallitas, pañal de aprendizaje, absorbentes algodón,periods,,sustainable living,menstrual cup,period positive,copamenstrual argentina">
 
   <meta name="author" content="Carlos Federico Claver">
 
@@ -19,8 +19,7 @@
 
   <title> Santa Cachucha | Productos</title>
 
-
-
+  <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -28,8 +27,13 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/estilo.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="img/santa.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/copa.svg">
+
+
 </head>
 
 
@@ -49,7 +53,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto align-items-center menu__links">
+          <ul class="navbar-nav ml-auto menu__links">
             <li class="nav-item">
               <img src="../img/corazon.svg" height="150px" width="150px"
                 class="d-inline-block align-top img-fluidcorazon" alt="Responsive imagen" />
@@ -67,7 +71,7 @@
               <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" href="contactanos.html">Contactanos</a>
             </li>
           </ul>
         </div>
@@ -100,7 +104,28 @@
         
     <!-- lista de Productos -->
         <ul class="list-group shadow">
-  
+           <!-- list group item -->
+           <li class="list-group-item">
+            <!-- Custom content-->
+            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+              <div class="media-body order-2 order-lg-1">
+                <h5 class="mt-0 font-weight-bold mb-2">Copa Menstrual</h5>
+                <br class="font-italic text-muted mb-0 small">La copa menstrual es la alternativa ecológica a los tampones. Es un recipiente de silicona hipoalergénica que contiene la sangre menstrual.  Se coloca en la vagina, más abajo que un tampón, y no se siente mientras se utiliza Se puede tener puesta hasta 12 horas, en las cuales se puede hacer ejercicio, nadar o dormir. Duran hasta 10 años y se esterilizan hirviéndolas en agua durante 5 minutos y se guardan secas hasta el siguiente ciclo.</p>
+                <div class="d-flex align-items-center justify-content-between mt-1">
+                  <h6 class="font-weight-bold my-2">$1500</h6>
+                  <ul class="list-inline small">
+                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                  </ul>
+                </div>
+              </div><img src="../img/productos/copa mentrual.jpg" alt="Copa Menstrual" width="200" class="ml-lg-5 order-1 order-lg-2">
+            </div>
+            <!-- End -->
+          </li>
+          <!-- End -->
           <!-- list group item-->
           <li class="list-group-item">
             <!-- Custom content-->
@@ -198,28 +223,7 @@
           </li>
           <!-- End -->
   
-          <!-- list group item -->
-          <li class="list-group-item">
-            <!-- Custom content-->
-            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
-              <div class="media-body order-2 order-lg-1">
-                <h5 class="mt-0 font-weight-bold mb-2">Copa Menstrual</h5>
-                <br class="font-italic text-muted mb-0 small">La copa menstrual es la alternativa ecológica a los tampones. Es un recipiente de silicona hipoalergénica que contiene la sangre menstrual.  Se coloca en la vagina, más abajo que un tampón, y no se siente mientras se utiliza Se puede tener puesta hasta 12 horas, en las cuales se puede hacer ejercicio, nadar o dormir. Duran hasta 10 años y se esterilizan hirviéndolas en agua durante 5 minutos y se guardan secas hasta el siguiente ciclo.</p>
-                <div class="d-flex align-items-center justify-content-between mt-1">
-                  <h6 class="font-weight-bold my-2">$1500</h6>
-                  <ul class="list-inline small">
-                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                    <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                  </ul>
-                </div>
-              </div><img src="../img/productos/copa mentrual.jpg" alt="Copa Menstrual" width="200" class="ml-lg-5 order-1 order-lg-2">
-            </div>
-            <!-- End -->
-          </li>
-          <!-- End -->
+         
   
         </ul>
         <!-- End -->
