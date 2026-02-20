@@ -1,18 +1,18 @@
-# Santa Cachucha | Higiene Ecológica
+# Santa Cachucha
 
-Sitio web de Santa Cachucha, tienda de productos de higiene ecológica y cosmética natural.
+Sitio web de **Santa Cachucha**, una cooperativa de mujeres dedicada a la producción y venta de productos de higiene ecológica y cosmética natural, basada en Córdoba, Argentina.
 
 ## Descripción
 
-Santa Cachucha es una tienda online que ofrece productos de higiene personal respetuosos con el medio ambiente: toallitas de tela reutilizables, copa menstrual, detergente ecológico, shampoo y acondicionador sólido, entre otros.
+El sitio presenta los productos de higiene personal ecológica de Santa Cachucha: toallitas de tela, copas menstruales, pañales ecológicos, detergentes biodegradables, limpiadores multiuso, shampoo sólido y más. La propuesta apunta a un consumo consciente, respetuoso del cuerpo y del medio ambiente.
 
-## Tecnologías utilizadas
+## Tecnologías
 
 - HTML5
 - CSS3 / SCSS
-- Bootstrap 4.5
-- JavaScript / jQuery
-- Font Awesome 4.7
+- Bootstrap 4.5.2
+- Font Awesome 4.7.0
+- JavaScript (jQuery 3.5.1)
 
 ## Estructura del proyecto
 
@@ -20,45 +20,37 @@ Santa Cachucha es una tienda online que ofrece productos de higiene personal res
 frontend/
 ├── index.html              # Página principal
 ├── pages/
-│   ├── comprar.html        # Catálogo de productos con precios
+│   ├── productos.html      # Catálogo de productos
+│   ├── quienes_somos.html  # Historia y valores
 │   ├── contacto.html       # Formulario de contacto
-│   ├── productos.html      # Detalle de productos
-│   ├── quienes_somos.html  # Historia e información del emprendimiento
-│   └── 404.html            # Página de error
+│   └── comprar.html        # Página de compra
 ├── css/
-│   ├── estilo.css          # Estilos personalizados compilados
-│   └── bootstrap.css       # Bootstrap
+│   └── estilo.css          # Estilos compilados
 ├── scss/
-│   ├── style.scss          # Archivo principal de estilos
-│   ├── _header.scss        # Estilos del header
-│   ├── _footer.scss        # Estilos del footer
-│   ├── _galeria.scss       # Estilos de galería
-│   └── _generales.scss     # Estilos generales
+│   └── style.scss          # Fuente SCSS
 ├── js/
-│   └── menu.js             # Lógica del menú
-└── img/                    # Imágenes del sitio
+│   └── menu.js             # Comportamiento del menú
+├── img/                    # Imágenes del sitio
+└── package.json
+```
+
+## Scripts disponibles
+
+```bash
+# Compilar SCSS a CSS
+npm run build-css
+
+# Vigilar cambios en SCSS y compilar automáticamente
+npm run watch-css
 ```
 
 ## Instalación
 
-1. Clonar el repositorio:
-   ```bash
-   git clone <url-del-repositorio>
-   ```
-
-2. Instalar dependencias:
-   ```bash
-   npm install
-   ```
-
-3. Abrir `index.html` en el navegador o usar un servidor local.
+```bash
+npm install
+npm run build-css
+```
 
 ## Autor
 
 Carlos Federico Claver
-
-## Contacto
-
-- Instagram: [@santa_cachucha__](https://www.instagram.com/santa_cachucha__/)
-- WhatsApp: +543513244563
-- Email: santacachucha@gmail.com
